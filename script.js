@@ -19,10 +19,9 @@ fetch('https://jsonblob.com/api/1296797574781329408')
     productos = infoArray.products;
     console.log(productos);
     productos.forEach(producto => {
-      mostrarProducto(producto.title);
-    }).catch((err) => {
-      console.log(err);
-    });
+      mostrarProducto(producto);
+    })
+  }).catch((err) => {
+    console.log(err);
   });
-
 });
