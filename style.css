@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
   font-size: 16px;
@@ -16,29 +15,45 @@ body {
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
   color: #333;
-  margin: 20px;
-}
-
-#contenedorTabla {
-  width: 100%;
-  margin: 20px 0;
-}
-
-#contenedorTabla table {
-  width: 100%;
-  border-collapse: collapse;
 }
 
 #contenedorCarrito {
-  width: 100%;
+  width: 50%;
   margin-top: 20px;
-  margin-left: 200px;
+  margin-left: 40px;
+  padding-left: 40px;
+}
+
+#contenedorTabla {
+  width: 50%;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+button {
+  margin: 0 5px;
+}
+#productosCarrito li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  list-style-type: none;
 }
